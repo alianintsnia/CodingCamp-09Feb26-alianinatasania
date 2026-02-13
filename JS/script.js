@@ -1,4 +1,5 @@
-let name = prompt("Aliani Natasania");
+alert("VERSI BARU");
+let name = prompt("Masukkan nama Anda:");
 
 let welcomeText = document.getElementById("welcome-text");
 
