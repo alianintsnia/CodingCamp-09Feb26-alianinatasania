@@ -1,6 +1,15 @@
-alert("VERSI BARU");
-let name = prompt("Masukkan nama Anda:");
+window.onload = function() {
 
-let welcomeText = document.getElementById("welcome-text");
+    let userName = prompt("Masukkan nama Anda:");
 
-welcomeText.innerText = "Hi " + userName + ", Welcome To Website";
+    if (!userName) {
+        userName = "Guest";
+    }
+
+    let welcomeText = document.getElementById("welcome-text");
+
+    console.log(welcomeText);
+
+    welcomeText.innerHTML = "TES BERHASIL" + userName;
+
+};
