@@ -8,8 +8,6 @@ window.onload = function() {
 
     let welcomeText = document.getElementById("welcome-text");
 
-    console.log(welcomeText);
-
-    welcomeText.innerHTML = "TES BERHASIL" + userName;
+    welcomeText.innerHTML = "Hi " + userName + ", Welcome To Website";
 
 };
