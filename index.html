@@ -7,26 +7,27 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+    <!-- NAVBAR -->
     <nav>
         <div class="logo">REVOU</div>
         <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">Our Profile</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Message Us</a>
+            <a href="#home">Home</a>
+            <a href="#profile">Our Profile</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#message">Message Us</a>
         </div>
     </nav>
 
-    <section class="main-banner">
-        <div class="banner-box">
-            <div class="banner-text">
-                <h1 id="welcome-text">Hi <span id="user-name">Guest</span>, Welcome To Website</h1>
-                <p>Ini adalah website latihan pertama</p>
-            </div>
+    <!-- HEADER + BANNER -->
+    <header id="home" class="banner-header">
+        <div class="banner-text">
+            <h1>Hi <span id="user-name">Guest</span>, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama</p>
         </div>
-    </section>
+    </header>
 
-    <section class="headquarters">
+    <!-- HEADQUARTERS -->
+    <section id="profile" class="headquarters">
         <h2>Our Headquarter</h2>
         <div class="hq-container">
             <div class="hq-item"><div class="circle"></div><p>Jakarta</p></div>
@@ -35,7 +36,18 @@
         </div>
     </section>
 
-    <section class="message-section">
+    <!--PORTOFOLIO-->
+    <section id="portofolio" class="portofolio">
+        <h2>My Portofolio</h2>
+        <div class="portofolio-grid">
+            <div class="portofolio-item"><img src="images/project1.png" alt="Project 1"></div>
+            <div class="portofolio-item"><img src="images/project2.png" alt="Project 2"></div>
+            <div class="portofolio-item"><img src="images/project3.png" alt="Project 3"></div>
+        </div>
+    </section>
+
+    <!-- MESSAGE SECTION -->
+    <section id="message" class="message-section">
         <div class="form-container">
             <h2>Message Us</h2>
             <form id="message-form">
@@ -60,7 +72,6 @@
     </section>
 
     <footer>Created By Aliani</footer>
-
     <script src="JS/script.js"></script>
 </body>
 </html>
