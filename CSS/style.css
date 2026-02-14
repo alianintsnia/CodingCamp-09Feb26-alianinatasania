@@ -1,0 +1,146 @@
+/* Reset Dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    background-color: #ffeb3b; /* Kuning seperti logo RevoU */
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+/* Header & Banner */
+header {
+    padding: 40px 50px;
+}
+
+.main-banner {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.banner-box {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+/* Headquarters Section */
+.headquarters {
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid #ccc;
+}
+
+.hq-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Form & Result Section */
+.message-section {
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    border-top: 1px solid #ccc;
+}
+
+.form-container, .result-container {
+    flex: 1;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"], 
+form input[type="date"], 
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+.result-container {
+    border: 1px solid black;
+    padding: 20px;
+    min-height: 200px;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    padding: 20px 50px;
+    border-top: 1px solid #ccc;
+    font-size: 0.8rem;
+}
+
+/* RESPONSIVE DESIGN (Mobile) */
+@media (max-width: 768px) {
+    nav, .hq-container, .message-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu { margin-top: 15px; }
+    .menu a { display: inline-block; margin: 5px; }
+    
+    .message-section {
+        padding: 20px;
+    }
+    
+    .result-container {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
