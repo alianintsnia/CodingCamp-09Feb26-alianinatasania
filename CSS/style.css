@@ -65,32 +65,16 @@ nav {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.menu a::after {
-    content: '';
-    position: absolute;
-    left: -5px;
-    right: -5px;
-    bottom: 0;
-    height: 5px;
-    border-radius: 0 0 8px 8px;
-    background: transparent;
-    transition: background 0.3s;
-}
-
-.menu a:hover::after,
-.menu a:active::after {
-    background: linear-gradient(135deg, #d1c4e9, #b39ddb);
-}
 
 /* ===================== BANNER + HEADER ===================== */
 .banner-header {
-    width: 100%;
+    width: 120%;
     max-width: 1200px;
-    height: 400px;
+    height: 450px;
     margin: 30px auto;
     border-radius: 20px;
     background: linear-gradient(rgba(211,196,233,0.5), rgba(179,157,219,0.5)),
-                url('images/banner.jpg') center/cover no-repeat;
+                url('../images/banner.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,8 +108,10 @@ nav {
 .hq-container {
     display: flex;
     justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
+    gap: 40px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
 }
 
 .hq-item {
@@ -144,10 +130,26 @@ nav {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #b39ddb, #9575cd);
+    border: 2px solid #9575cd;
+    background-color: #fff;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     margin-bottom: 15px;
     transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.circle img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.circle img:hover {
+    transform: scale(1.05);
 }
 
 .hq-item:hover .circle {
@@ -209,7 +211,7 @@ form textarea {
     width: 100%;
     padding: 10px 12px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #9575cd;
     box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
     transition: border-color 0.3s, box-shadow 0.3s;
 }
